@@ -1,0 +1,412 @@
+body {
+	font-size:76%;
+	font-family:arial, verdana, sans-serif;
+	background:#1d1000;
+	color:#8a6940;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	width:925px;
+	margin:0 auto;
+}
+
+#header {
+	background:url(logo-test.jpg) no-repeat;
+	background:url(home_graphic-aug4.jpg) no-repeat;
+	width:925px;
+	height:194px;
+	position:relative;
+	margin:0 auto;
+}
+
+h1 {
+	font-size:150%;
+	padding:35px 0 0 0;
+}
+
+h1 a {
+	text-decoration:none;
+	cursor:pointer;
+	color:#ccc;
+}
+
+h1 span {
+	display:block;
+	background:url(logo-test.jpg) no-repeat;
+	width:200px;
+	height:194px;
+	position:absolute; top:0; left:0;
+}
+
+#header p {
+	margin-left:640px;
+	text-align:left;
+}
+
+#mainMenuContainer {
+	position:absolute; 
+	top:156px; 
+	left:232px; 
+	width:653px; 
+	height:31px;
+}
+
+#mainMenu {
+	list-style:none;
+	overflow:hidden; /* wrap floats */
+	vertical-align:middle;
+	text-align:center;
+	font:normal 16px/31px arial,helvetica,sans-serif;
+}
+
+#mainMenu {
+	height:31px; /* also trips haslayout, wrap floats IE */
+}
+
+#mainMenu li {
+	display:inline; /* don't even bother trying to style this, thanks IE */
+}
+
+#mainMenu a {
+	position:relative;
+	float:left;
+	overflow:hidden;
+	display:inline; /* make IE behave */
+	cursor:hand;
+	height:31px;
+	color:#bb8d00;
+}
+
+#mainMenu span {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:31px;
+	background:url(menu-test.jpg);
+}
+
+
+#mainMenu a:active span,
+#mainMenu a:focus span,
+#mainMenu a:hover span {
+/*	top:-32px;
+	display:block; /* display state change makes sure IE renders the move */
+}
+
+#mainMenu .home a {
+	width:80px;
+}
+
+#mainMenu .home span {
+	background-position:0 0;
+}
+
+#mainMenu .services a {
+	width:120px;
+}
+
+#mainMenu .services span {
+	background-position:-80px 0;
+}
+
+#mainMenu .difference a {
+	width:180px;
+}
+
+#mainMenu .difference span {
+	background-position:-200px 0;
+}
+
+#mainMenu .showcase a {
+	width:135px;
+}
+
+#mainMenu .showcase span {
+	background-position:-380px 0;
+}
+
+#mainMenu .contact a {
+	width:138px;
+}
+
+#mainMenu .contact span {
+	background-position:-515px 0;
+}
+
+#container {
+	width:828px;
+	margin:0 auto;
+	overflow:hidden;
+	background:#fff3dd url(containerBG.gif) no-repeat;
+	padding-bottom:40px;
+}
+
+#flashContent {
+	width:816px;
+	margin:-6px auto 0 auto;
+	height:263px;
+	border-bottom:6px solid #6d715a;
+}
+
+#flashContent p {
+	font-size:16px;
+	width:408px;
+	margin:0 auto;
+	padding-top:50px;
+}
+
+#content {
+	width:816px;
+	margin:0 auto;
+	background:#fff3dd;
+	padding:35px 0 30px 0;
+	font-family:"Times New Roman";
+	overflow:hidden;
+}
+
+.imghome {
+	float:left;
+	margin:5px 0 0 32px;
+}
+
+
+#content h2 {
+	color:#526719;
+	margin:0 0 0 305px;
+	font-size:27px;
+	letter-spacing:2px;
+	padding-bottom:5px;
+}
+
+#content .services {
+	color:#bb8d00;
+	font-size:18px;
+}
+
+#content p {margin-left:305px; 
+	width:460px; 
+	line-height:20px;
+	text-align:justify; 
+	font-size:15px; 
+	padding:0 0 15px 0;
+}
+
+#content p.cary {font-size:18px; font-style:italic;}
+
+#content p.differenceBottomPad {padding-bottom:200px;}
+
+#flashGalleryContainer {
+	margin-left:275px;
+	margin-bottom:20px;
+	width:523px;
+	height:448px;
+	background:#efe5cf;
+}
+
+#flashGalleryContainer p {
+	margin:0 auto; 
+	width:400px; 
+	padding-top:50px;
+}
+
+#contactContainer {
+	margin-left:300px;
+	width:500px;
+	overflow:hidden;
+	display:inline;
+}
+
+#addressHolder{
+	float:left;
+	width:240px;
+}
+
+#formHolder {
+	float:right;
+	width:240px;
+	padding-right:10px;
+}
+
+#contactContainer h2 {
+	color:#526719;
+	font-size:27px;
+	letter-spacing:2px;
+	padding:0 0 5px 20px;
+	margin:0;
+}
+
+#addressHolder p {
+	margin:0;
+	font-weight:bold;
+	padding:0 0 0 20px;;
+	width:240px;
+}
+
+address {
+	font-style:normal;
+	padding:5px 0 20px 20px;
+	font-size:15px;
+}
+
+#subMenu {
+	float:left; 
+	padding-left:37px;
+}
+
+#subMenu dl {width:227px;}
+
+#subMenu dt {
+	margin:0; 
+	padding:5px 0; 
+	font-size:27px; 
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	color:#ada598; 
+	border-bottom:3px solid #fff; 
+	background:#d7cbb2;
+	
+}
+
+#subMenu dd {
+	border-bottom:1px dashed #fff; 
+}
+
+* html #subMenu dd {border-bottom:1px dotted #fff;}
+
+#subMenu dd.last {border-bottom:0 none;}
+
+#gallery a, #gallery a:visited, #gallery a:active, #gallery a:focus,
+#galleryShowcase a, #galleryShowcase a:visited, #galleryShowcse a:active, #galleryShowcase a:focus {
+	color:#56575f; 
+	text-decoration:none; 
+	padding:10px 0 10px 30px;
+	display:block;
+	font-weight:bold; 
+	font-style:italic; 
+	font-size:18px;
+	background:#e7dcc6;
+	
+}
+
+#gallery a:hover, #galleryShowcase a:hover {color:#5d721b;}
+
+#subMenu.homes a#homesnav, 
+#subMenu.boathouses a#boatsnav,
+#subMenu.docks a#docksnav,
+#subMenu.specialties a#specialtiesnav,
+#subMenu.showcase a#skeletonlakenav {
+	color:#52721b;
+}
+
+#footer {
+	clear:both;
+	background:#e5d7bd;
+	height:70px;
+	width:816px;
+	margin:0 auto;
+	font-family:"Times New Roman";
+	font-size:14px;
+	padding-bottom:10px;
+}
+
+ul#footerMenu {padding-left:20px; 
+	list-style:none;
+	text-align:center;
+	margin:0 auto;
+	width:650px;
+	padding-top:10px;
+}
+
+ul#footerMenu li {
+	display:inline;
+}
+
+ul#footerMenu a {
+	margin-top:6px;
+	padding:0 34px 0 29px;
+	text-decoration:none;
+	color:#5d721b;
+	float:left;
+	border-right:1px solid #c6b192;
+	text-align:center;
+	border-bottom:1px solid #c6b192;
+	letter-spacing:2px;
+}
+
+#footerMenu a.first {padding-left:0;}
+#footerMenu a.last {border-right:0; padding-right:0;}
+#footerMenu a:active,
+#footerMenu a:focus,
+#footerMenu a:hover {
+	color:#5d721b;
+}
+
+#footer p {
+	float:left;
+	color:#6b400f;
+	padding:10px 35px 0 35px;
+	font-style:italic;
+}
+
+#footer  a {
+	text-decoration:none;
+	color:#6b400f;
+}
+
+#footer a span {color:#5d721b;}
+
+form, label, input {}
+form {
+	color:#868b70;
+	width:238px;
+}
+
+fieldset {
+	border:0 none;
+}
+
+label {
+	float:left;
+	width:50px;
+	border:0 none;
+	background:#e7ddc7;
+	padding:10px 0 10px 5px;
+	font-weight:bold;
+}
+
+input {
+	float:left;
+	margin-bottom:.5em;
+	width:180px;
+	border:0 none;
+	padding:10px 0;
+}
+
+textarea {
+	width:235px;
+	border:0 none;
+}
+
+input, textarea {
+	background:#e7ddc7;
+}
+
+.submit {
+	margin:15px 0 0 185px;
+	float:left;
+	width:51px;
+	height:23px;
+	border:0 none;
+	text-align:center;
+	padding:0;
+}
+
+form br {clear:both;}
+
